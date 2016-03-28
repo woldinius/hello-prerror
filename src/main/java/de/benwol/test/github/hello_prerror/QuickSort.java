@@ -7,6 +7,7 @@ public class QuickSort implements SortingAlgorithm {
 
     private int[] toBeSorted;
 
+    @Override
     public void sort(int[] unsortedInts) {
         this.toBeSorted = unsortedInts;
         quicksort(0, toBeSorted.length - 1);

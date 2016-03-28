@@ -10,7 +10,7 @@ public class InsertionSort implements SortingAlgorithm {
         insertionSort(unsortedInts);
     }
 
-    public void insertionSort(int[] unsortedInts) {
+    private void insertionSort(int[] unsortedInts) {
         int j;
         for (int i = 1; i < unsortedInts.length; i++) {
             int number = unsortedInts[i];
