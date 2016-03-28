@@ -2,4 +2,9 @@
 
 Ben'style Hello World..
 
-TODO write read me
+TODO
+
+DOING:
+
+DONE:
+- Hello GitHub
