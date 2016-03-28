@@ -12,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 public class QuickSortTest {
 
     @Test
-    public void test_insertionSort_with_100_random_ints() {
+    public void test_quickSort_with_100_random_ints() {
         int[] arrayOf100ints = new Random().ints(100).toArray();
         QuickSort sorter = new QuickSort();
         sorter.sort(arrayOf100ints);
