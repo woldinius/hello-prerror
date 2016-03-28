@@ -5,9 +5,9 @@ import java.util.Random;
 /**
  * Created by Ben on 27.03.2016.
  */
-public class SortAlgorithmsApplication {
+class SortAlgorithmsApplication {
 
-    public static SortingAlgorithm get(String identifier) {
+    private static SortingAlgorithm get(String identifier) {
         switch (identifier.toLowerCase()) {
             case "quicksort":
                 return new QuickSort();
@@ -19,7 +19,13 @@ public class SortAlgorithmsApplication {
 
 
     public static void main(String[] args) {
-        SortingAlgorithm sorter = get(args[0]);
+        String algo = "";
+        if (args.length > 0) {
+            algo = args[0];
+        }
+        SortingAlgorithm sorter = get(algo);
+
+        System.out.println("Use algorithm: " + sorter.getClass().getName());
 
         int[] randomNumbers = new Random().ints(10, 0, 10).toArray();
 
