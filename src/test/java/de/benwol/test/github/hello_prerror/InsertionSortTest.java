@@ -15,7 +15,7 @@ public class InsertionSortTest {
     public void test_insertionSort_with_100_random_ints() {
         int[] arrayOf100ints = new Random().ints(100).toArray();
         InsertionSort sorter = new InsertionSort();
-        sorter.insertionSort(arrayOf100ints);
+        sorter.sort(arrayOf100ints);
 
         boolean sorted = true;
         for (int i = 1; i < arrayOf100ints.length && sorted; i++) {
